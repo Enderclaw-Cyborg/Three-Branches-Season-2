@@ -54,6 +54,18 @@ def _text(length: int) -> spaces.Text:
     return spaces.Text(max_length=length, min_length=1, charset=_TEXT)
 
 
+class _ActionBox(spaces.Box):
+    """Accept native scalar action values without Gymnasium's conversion warning."""
+
+    def contains(self, x: Any) -> bool:
+        if not isinstance(x, np.ndarray):
+            try:
+                x = np.asarray(x, dtype=self.dtype)
+            except (TypeError, ValueError):
+                return False
+        return super().contains(x)
+
+
 class ThreeBranchesEnv(ParallelEnv):
     """One village day where all players act from the same pre-tick state."""
 
@@ -151,8 +163,8 @@ class ThreeBranchesEnv(ParallelEnv):
         )
         action = spaces.Dict(
             {
-                "heading": spaces.Box(0.0, 360.0, shape=(), dtype=np.float32),
-                "speed": spaces.Box(0.0, 1.0, shape=(), dtype=np.float32),
+                "heading": _ActionBox(0.0, 360.0, shape=(), dtype=np.float32),
+                "speed": _ActionBox(0.0, 1.0, shape=(), dtype=np.float32),
                 "action": spaces.Discrete(len(EMOTES) + 2),
             }
         )
