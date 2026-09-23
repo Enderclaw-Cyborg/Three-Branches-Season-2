@@ -13,6 +13,8 @@ Season 2 Update: Added compatibility for 10 agents.
 I used the built in Agents chat in VSCode to assist with creating randomness and understanding of how the code functions, as well as debugging and fixing errors.
 
 
+
+
 # Days at Three Branches agent
 
 Edit `agent.py` to give every one of your villagers a routine. The platform runs a separate `Agent` instance for each NPC, so instances do not share variables or memory. The supplied `sandbox/` directory contains the local runner, types, and village helpers. Leave it unchanged, and leave `requirements.in` and `requirements.txt` alone: the pinned packages match the server.
