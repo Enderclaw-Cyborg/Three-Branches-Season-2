@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## Design Goal
 
 I will have the NPCs move about the village doing random tasks assigned to them.
@@ -9,7 +9,7 @@ I originally would have had each npc focus on one interactable specifically, but
 
 Season 2 Update: Added compatibility for 10 agents.
 
-Season 3 Notes: really struggling to make this one feel lively instead of doing assigned tasks.
+Season 3 Notes: really struggling to make this one feel lively instead of doing assigned tasks. Removed random assignment and hopefully implemented the other emotes properly.
 
 ### AI Disclosure
 
