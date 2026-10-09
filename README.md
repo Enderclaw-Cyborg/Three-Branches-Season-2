@@ -8,6 +8,8 @@ I originally would have had each npc focus on one interactable specifically, but
 
 Season 2 Update: Added compatibility for 10 agents.
 
+Season 3 Notes: really struggling to make this one feel lively instead of doing assigned tasks.
+
 ### AI Disclosure
 
 I used the built in Agents chat in VSCode to assist with creating randomness and understanding of how the code functions, as well as debugging and fixing errors.
