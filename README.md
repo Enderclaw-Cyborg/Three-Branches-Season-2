@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 26f7121345b3bf1907eb77161d829efd65104727
 ## Design Goal
 
 I will have the NPCs move about the village doing random tasks assigned to them.
