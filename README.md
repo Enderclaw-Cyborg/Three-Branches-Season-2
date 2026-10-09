@@ -1,3 +1,20 @@
+## Design Goal
+
+I will have the NPCs move about the village doing random tasks assigned to them.
+
+### Reflection
+
+I originally would have had each npc focus on one interactable specifically, but that would be boring and repetitive, so I introduced random assignments for each villager.
+
+Season 2 Update: Added compatibility for 10 agents.
+
+### AI Disclosure
+
+I used the built in Agents chat in VSCode to assist with creating randomness and understanding of how the code functions, as well as debugging and fixing errors.
+
+
+
+
 # Days at Three Branches agent
 
 Edit `agent.py` to give every one of your villagers a routine. The platform runs a separate `Agent` instance for each NPC, so instances do not share variables or memory. The supplied `sandbox/` directory contains the local runner, types, and village helpers. Leave it unchanged, and leave `requirements.in` and `requirements.txt` alone: the pinned packages match the server.
